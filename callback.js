@@ -35,7 +35,7 @@ let callback = (num) => {
     let remainder = num % 2; // modulus
     if (remainder === 0) {
         return "The number is even.";
-    }         
+    }
 
     // If it's not even, then it's odd
     return "The number is odd.";
@@ -46,7 +46,12 @@ let returnedValue = callback(true);
 console.log(returnedValue);
 
 console.log(callback(1337));
-console.log(callback(42))
+console.log(callback(42));
 console.log(callback("Joshua"));
 console.log(callback(false));
 console.log(callback(NaN));
+
+//  (iterator; run condition; code after each loop)
+for (let i = 0; i <= 10; i++) {
+    console.log(callback(i));
+}
